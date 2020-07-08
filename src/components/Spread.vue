@@ -40,7 +40,7 @@ export default {
       return (100 * (y - x)) / x;
     },
     getFunding: function() {
-      return fetch(`http://54.255.243.128:3000/funding?asset=${this.name}`)
+      return fetch(`http://178.128.90.67:3000/funding?asset=${this.name}`)
         .then(r => r.json())
         .then(data => Math.round(data.rate * 100 * 10000)/10000)
     }
